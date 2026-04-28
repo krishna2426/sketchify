@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-background: #000000;
+  --color-on-surface: #e5e1e4;
+  --color-surface: #131315;
+  --color-surface-container: #201f22;
+  --color-surface-bright: #39393b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased selection:bg-white selection:text-black;
+  }
+}
+
+/* Custom Slider Styling */
+input[type="range"] {
+  @apply appearance-none bg-transparent cursor-pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  @apply h-[1px] bg-zinc-800;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply appearance-none h-3 w-3 bg-white border border-black rounded-none -mt-[5.5px] transition-transform active:scale-125;
+}
+
+.technical-grid {
+  background-image: radial-gradient(circle, #27272a 1px, transparent 1px);
+  background-size: 24px 24px;
+}

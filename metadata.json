@@ -1,0 +1,6 @@
+{
+  "name": "Sketchify",
+  "description": "High-fidelity photo-to-art converter using browser-side Canvas API. Features pencil sketch, charcoal, crosshatch, and watercolor styles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
